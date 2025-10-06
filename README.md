@@ -10,7 +10,6 @@ A sorting algorithm using two stacks and a limited set of operations. Part of th
 - [Installation](#installation)
 - [Usage](#usage)
 - [Algorithm: Radix Sort Explained](#algorithm-radix-sort-explained)
-- [Operations](#operations)
 
 ---
 
@@ -180,24 +179,6 @@ Stack A (SORTED!)
 
 ---
 
-## Operations
-
-| Operation | Description | Example |
-|-----------|-------------|---------|
-| `sa` | Swap top 2 of stack A | `[2,1,3]` → `[1,2,3]` |
-| `sb` | Swap top 2 of stack B | `[5,4]` → `[4,5]` |
-| `ss` | `sa` + `sb` at same time | Both swap |
-| `pa` | Push top of B to A | `B:[5]` → `A:[5,...]` |
-| `pb` | Push top of A to B | `A:[3]` → `B:[3,...]` |
-| `ra` | Rotate A up (first→last) | `[1,2,3]` → `[2,3,1]` |
-| `rb` | Rotate B up | `[4,5,6]` → `[5,6,4]` |
-| `rr` | `ra` + `rb` | Both rotate up |
-| `rra` | Rotate A down (last→first) | `[1,2,3]` → `[3,1,2]` |
-| `rrb` | Rotate B down | `[4,5,6]` → `[6,4,5]` |
-| `rrr` | `rra` + `rrb` | Both rotate down |
-
----
-
 ## Project Structure
 
 ```
@@ -227,17 +208,6 @@ Push_Swap/
 - Non-numbers: `1 abc 3`
 - Out of range: `2147483648`
 - Empty strings
-
----
-
-## Performance
-
-| Stack Size | Average Operations |
-|------------|-------------------|
-| 3 | 2-3 |
-| 5 | 7-12 |
-| 100 | ~550 |
-| 500 | ~5300 |
 
 ---
 
