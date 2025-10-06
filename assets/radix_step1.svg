@@ -1,0 +1,98 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="300" y="30" font-family="monospace" font-size="18" font-weight="bold"
+        fill="#333" text-anchor="middle">
+    Step 1: Index Assignment
+  </text>
+
+  <!-- Original values -->
+  <text x="50" y="70" font-family="monospace" font-size="14" fill="#666">Original Values:</text>
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="50" height="40" fill="#667eea" rx="5"/>
+    <text x="25" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">5</text>
+
+    <rect x="60" y="0" width="50" height="40" fill="#667eea" rx="5"/>
+    <text x="85" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">2</text>
+
+    <rect x="120" y="0" width="50" height="40" fill="#667eea" rx="5"/>
+    <text x="145" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">8</text>
+
+    <rect x="180" y="0" width="50" height="40" fill="#667eea" rx="5"/>
+    <text x="205" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">1</text>
+
+    <rect x="240" y="0" width="50" height="40" fill="#667eea" rx="5"/>
+    <text x="265" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">9</text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 170 150 L 170 180" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- After sorting (conceptual) -->
+  <text x="50" y="210" font-family="monospace" font-size="14" fill="#666">Sorted Order:</text>
+  <g transform="translate(50, 220)">
+    <rect x="0" y="0" width="50" height="40" fill="#4ade80" rx="5"/>
+    <text x="25" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">1</text>
+
+    <rect x="60" y="0" width="50" height="40" fill="#4ade80" rx="5"/>
+    <text x="85" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">2</text>
+
+    <rect x="120" y="0" width="50" height="40" fill="#4ade80" rx="5"/>
+    <text x="145" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">5</text>
+
+    <rect x="180" y="0" width="50" height="40" fill="#4ade80" rx="5"/>
+    <text x="205" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">8</text>
+
+    <rect x="240" y="0" width="50" height="40" fill="#4ade80" rx="5"/>
+    <text x="265" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">9</text>
+  </g>
+
+  <!-- Indices -->
+  <text x="50" y="290" font-family="monospace" font-size="14" fill="#666">Assigned Indices:</text>
+  <g transform="translate(50, 300)">
+    <rect x="0" y="0" width="50" height="40" fill="#f59e0b" rx="5"/>
+    <text x="25" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">0</text>
+
+    <rect x="60" y="0" width="50" height="40" fill="#f59e0b" rx="5"/>
+    <text x="85" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">1</text>
+
+    <rect x="120" y="0" width="50" height="40" fill="#f59e0b" rx="5"/>
+    <text x="145" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">2</text>
+
+    <rect x="180" y="0" width="50" height="40" fill="#f59e0b" rx="5"/>
+    <text x="205" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">3</text>
+
+    <rect x="240" y="0" width="50" height="40" fill="#f59e0b" rx="5"/>
+    <text x="265" y="27" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle">4</text>
+  </g>
+
+  <!-- Binary representation -->
+  <text x="350" y="70" font-family="monospace" font-size="14" fill="#666">Binary:</text>
+  <g transform="translate(350, 80)">
+    <rect x="0" y="0" width="70" height="40" fill="#ec4899" rx="5"/>
+    <text x="35" y="27" font-family="monospace" font-size="16" fill="#fff" text-anchor="middle">010</text>
+
+    <rect x="0" y="50" width="70" height="40" fill="#ec4899" rx="5"/>
+    <text x="35" y="77" font-family="monospace" font-size="16" fill="#fff" text-anchor="middle">001</text>
+
+    <rect x="0" y="100" width="70" height="40" fill="#ec4899" rx="5"/>
+    <text x="35" y="127" font-family="monospace" font-size="16" fill="#fff" text-anchor="middle">011</text>
+
+    <rect x="0" y="150" width="70" height="40" fill="#ec4899" rx="5"/>
+    <text x="35" y="177" font-family="monospace" font-size="16" fill="#fff" text-anchor="middle">000</text>
+
+    <rect x="0" y="200" width="70" height="40" fill="#ec4899" rx="5"/>
+    <text x="35" y="227" font-family="monospace" font-size="16" fill="#fff" text-anchor="middle">100</text>
+  </g>
+
+  <!-- Labels for mapping -->
+  <text x="440" y="105" font-family="monospace" font-size="13" fill="#888">← value 5 (index 2)</text>
+  <text x="440" y="155" font-family="monospace" font-size="13" fill="#888">← value 2 (index 1)</text>
+  <text x="440" y="205" font-family="monospace" font-size="13" fill="#888">← value 8 (index 3)</text>
+  <text x="440" y="255" font-family="monospace" font-size="13" fill="#888">← value 1 (index 0)</text>
+  <text x="440" y="305" font-family="monospace" font-size="13" fill="#888">← value 9 (index 4)</text>
+</svg>
